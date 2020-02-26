@@ -33,8 +33,8 @@ find_all(fh, key, **kw)   => ITERATOR_OVER_ALL_MATCHED_LINES
 
 We can see it being useful in many places, but following are a few places where we do have the need:
 
-* [IPWB](https://github.com/oduwsdl/ipwb) Replay Index Search
-* [MementoMap](https://github.com/oduwsdl/MementoMap) Prefix Search
+* [IPWB](https://github.com/oduwsdl/ipwb) replay index search
+* [MementoMap](https://github.com/oduwsdl/MementoMap) prefix search
 * A built-in CLI tool to perform binary search on files
 
 ## Considerations
