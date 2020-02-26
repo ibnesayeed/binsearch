@@ -7,12 +7,13 @@ A Python module for binary search in sorted files.
 Given a sorted file, perform binary search on disk to find if a given lookup key is present in the file.
 The file can have fielded data and matching is desired to be performed on a select few fields only.
 It may also be desired to perform a prefix match where the lookup key is a prefix of one or more records in the file.
-The search needs to be able to report no matches, all matches, the first match, or the last match.
+The search needs to be able to report no matches, all matches, any match, the first match, or the last match.
 In case a start and/or end byte position(s) is/are provided, the search should only be performed within that given range.
 
 ## Functions
 
 ```
+find(fh, key, **kw)       => None | ANY_MATCHED_LINE
 find_first(fh, key, **kw) => None | FIRST_MATCHED_LINE
 find_last(fh, key, **kw)  => None | LAST_MATCHED_LINE
 find_all(fh, key, **kw)   => ITERATOR_OVER_ALL_MATCHED_LINES
