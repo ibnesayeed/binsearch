@@ -26,7 +26,7 @@ find_all(fh, key, **kw)   => ITERATOR_OVER_ALL_MATCHED_LINES
 * `fields` - Int, number of fields in each line from the beginning to match against (Default: `None`)
 * `matcher` - Function, to identify the portion of lines read for matching, overrides `fields` param (Default: `line.strip()`)
 * `prefix` - Boolean, whether perform prefix match or exact (Default: `False`)
-* `prefix_boundary` - Bytes, only consider prefix match if the following character is a boundary character (Default: `",/)'\".\s’"`)
+* `prefix_boundary` - Bytes, only consider prefix match if the following character is a boundary character (Default: `''`)
 * `start` - Int, beginning byte of the start the search boundary (Default: `0`)
 * `end` - Int, end byte of the search boundary (Default: `fh.size()`)
 
